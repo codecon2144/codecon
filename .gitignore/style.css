@@ -1,0 +1,320 @@
+body {
+
+width:100%;
+font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
+margin: 0; /* Отступы на странице */
+}
+h1 {
+font-size: 36px; /* Размер шрифта */
+margin: 0; /* Убираем отступы */
+color: #FFFFFF; /* Цвет текста */
+}
+h2 {
+margin-top: 0; /* Убираем отступ сверху */
+}
+#header { /* Верхний блок */
+background: #4a76a8; /* Цвет фона */
+padding: 10px; /* Поля вокруг текста */
+}
+#content { /* Правая колонка */
+background: #EDEEF0;
+margin: 0px 15% 0px 15%; /* Значения отступов */
+padding: 5px; /* Поля вокруг текста */
+}
+#content1 {
+width: 100%; /* Правая колонка */
+background: #EDEEF0;
+/* Поля вокруг текста */
+}
+#footer { /* Нижний блок */
+background: #333; /* Цвет фона */
+padding: 5px; /* Поля вокруг текста */
+color: #fff; /* Цвет текста */
+clear: left; /* Отменяем действие float */
+height: 25px;
+padding-top: 13px;
+margin-bottom:25px;
+}
+
+#ico{
+float: left;
+}
+#ico2{
+float: right;
+}
+
+.ico{
+margin-right: 10px;
+
+}
+
+.news {
+
+border-radius: 10px;
+background: white;
+margin-left: 1%;
+margin-bottom:10px;
+margin-top:8px;
+width:67%;
+float: left;
+padding: 5px;
+}
+.work {
+margin-top:8px;
+border-radius: 10px;
+background: white;
+margin-left:1%;
+width:28%;
+float:left;
+padding: 5px;
+}
+.about {
+border-radius: 10px;
+background: white;
+margin: 25px 1% 10px 1%;
+width:96%;
+clear: left;
+padding: 10px;
+}
+.about img {
+    width:45%;
+    height:35%;
+}
+.about h2 {
+    color: black;
+}
+#conteiner1{
+background: #333;
+width:100%;
+
+}
+#conteiner{
+
+width:850px;
+height:auto;
+margin:0px auto;
+padding-top:0px;
+}
+#menu1{
+position:relative;
+display:block;
+width:100%;
+height:auto;
+z-index:10;
+}
+#menu1 ul{
+position:relative;
+display:block;
+margin:0px;
+padding:0px;
+width:100%;
+height:auto;
+list-style:none;
+background:#333;
+}
+#menu1 > ul{
+text-align:justify;
+font-size:1px;
+line-height:1px;
+}
+#menu1 > ul::after{
+display:inline-block;
+width:100%;
+height:0px;
+content:" ";
+}
+#menu1 ul li{
+position:relative;
+display:inline-block;
+width:auto;
+height:auto;
+vertical-align:top;
+text-align:left;
+}
+#menu1 ul li.razd{
+height:28px;
+width:1px;
+background:#ffffff;
+margin-top:4px;
+
+}
+#menu1 ul li a{
+display:block;
+padding:9px 45px 0px 45px;
+font-size:15px;
+font-family:Arial, sans-serif;
+color:#ffffef;
+line-height:1.3em;
+text-decoration:none;
+font-weight:bold;
+text-transform:uppercase;
+height:36px;
+box-sizing:border-box;
+}
+#menu1 ul li > a:hover, #menu1 ul li:hover > a{
+background:#C0C0C0;
+}
+#menu1 ul li ul{
+position:absolute;
+top:36px;
+left:0px;
+display:none;
+width:auto;
+background:#333;
+white-space:nowrap;
+}
+#menu1 ul li:last-child ul{/*последний пункт будет прикреплен по правому краю*/
+left:auto;
+right:0px;
+}
+#menu1 ul li:hover ul{display:block;}/*эта строчка реализует механизм выпадения*/
+#menu1 ul li ul li{
+display:block;
+width:auto;
+}
+#menu1 ul li ul li a{
+display:block;
+text-transform:none;
+height:auto;
+padding:7px 45px;
+width:100%;
+box-sizing:border-box;
+border-top:1px solid #ffffff;
+}
+#menu1 ul li ul li:first-child a{border-top:0px;}
+#menu1 ul li ul li a:hover{
+background:#C0C0C0;
+}
+P {
+text-indent: 1.5em; /* Отступ первой строки */
+text-align: justify; /* Выравнивание по ширине */
+}
+
+
+.popup {
+top: 0;
+right: 0;
+left: 70%;
+font-size: 14px;
+font-family: 'Tahoma', Arial, sans-serif;
+z-index: 10000;
+margin: 0 auto;
+width: 100%;
+min-width: 320px;
+max-width: 100px;
+/* фиксированное позиционирование, окно стабильно при прокрутке */
+position: fixed;
+padding: 15px;
+border: 1px solid #383838;
+/* скругление углов */
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+border-radius: 4px;
+background-color: #FFFFFF;
+/* внешняя тень */
+-webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-o-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+/* трансформация */
+-webkit-transform: translate(-50%, -150%);
+-ms-transform: translate(-50%, -150%);
+-o-transform: translate(-50%, -150%);
+transform: translate(-100%, -150%);
+/* анимируем трансформацию */
+-webkit-transition: transform 0.6s ease-out;
+-moz-transition: transform 0.6s ease-out;
+-ms-transition: transform 0.6s ease-out;
+-o-transition: transform 0.6s ease-out;
+transition: transform 0.6s ease-out;
+}
+/* активируем мод. окно */
+.overlay:target+.popup {
+top: 180px;
+-webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-100%, -50%);
+}
+/* формируем кнопку закрытия */
+.close {
+position: absolute;
+padding: 0;
+top: -10px;
+right: -10px;
+width: 22px;
+height: 22px;
+border: 2px solid #ccc;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+border-radius: 50%;
+background-color: rgba(61, 61, 61, 0.8);
+-webkit-box-shadow: 0px 0px 10px #000;
+-moz-box-shadow: 0px 0px 10px #000;
+box-shadow: 0px 0px 10px #000;
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+line-height: 20px;
+-webkit-transition: background-color ease .7s;
+-moz-transition:  background-color ease .7s;
+-ms-transition:  background-color ease .7s;
+-o-transition:  background-color ease .7s;
+transition: background-color ease .7s;
+}
+.close:before {
+color: rgba(255, 255, 255, 0.9);
+content: '\2715';
+text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+font-size: 12px;
+ 
+}
+
+.close:hover {
+background-color: rgba(252, 20, 0, 0.8);
+}
+.popup p {
+margin: 0;
+padding: 10px;
+}
+
+.overlay {
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 9999;
+visibility: hidden;
+background-color: rgba(0, 0, 0, 0.7);
+opacity: 0;
+position: fixed;
+transition: all 0.6s;
+}
+.overlay:target {
+visibility: visible;
+opacity: 1;
+}
+
+#login input { width: 238px; margin: 0; padding: 12px 10px; border: 1px solid #ccc; outline: none; font-size: 14px; }
+#login input:focus { background: #fafafa; box-shadow: inset 0 1px 7px #ddd;}
+#login input[type="email"] { border-radius: 3px 3px 0 0; }
+#login input[name="password"] {	border-width: 0 1px; border-radius: 0; }
+#login h1 {color:black;margin-bottom:20px;}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+#login h1 {
+color:red;
+font-size:1em;
+}
+}
+body a {
+text-decoration:none;
+}
+pre {
+white-space: pre-wrap;
+}
